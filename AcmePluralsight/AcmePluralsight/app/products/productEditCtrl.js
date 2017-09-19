@@ -33,8 +33,8 @@
 
         vm.submit = function () {
             vm.product.$save(function (data) {
-                    toastr.success("Save Successful");
-                }
+                toastr.success("Save Successful");
+            }
             );
         }
 
@@ -47,7 +47,7 @@
                 var array = tags.split(',');
                 vm.product.tags = vm.product.tags ? vm.product.tags.concat(array) : array;
                 vm.newTags = "";
-            } else{
+            } else {
                 alert("Please enter one or more tags separated by commas");
             }
         }
